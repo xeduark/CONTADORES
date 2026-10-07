@@ -1,3 +1,4 @@
 contadores_config.bat
 .venv/
 __pycache__/
+datos/
