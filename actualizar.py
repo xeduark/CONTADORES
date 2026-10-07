@@ -74,6 +74,11 @@ def instalar(carpeta=AQUI):
     else:
         _git(carpeta, "remote", "add", REMOTO, REPO)
 
+    compartida = os.path.join(carpeta, "llave_compartida")
+    if os.path.exists(compartida):   # misma llave para todas las PC: viaja en la carpeta, no por git
+        os.makedirs(os.path.dirname(LLAVE), exist_ok=True)
+        shutil.copyfile(compartida, LLAVE)             # siempre pisa: asi se renueva
+        shutil.copyfile(compartida + ".pub", LLAVE + ".pub")
     if not os.path.exists(LLAVE):
         os.makedirs(os.path.dirname(LLAVE), exist_ok=True)
         keygen = shutil.which("ssh-keygen") or os.path.join(

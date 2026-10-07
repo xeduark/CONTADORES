@@ -2,3 +2,5 @@ contadores_config.bat
 .venv/
 __pycache__/
 datos/
+llave_compartida
+llave_compartida.pub
