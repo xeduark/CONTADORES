@@ -46,6 +46,9 @@ if not defined HAYGIT (
     winget install -e --id Git.Git --accept-package-agreements --accept-source-agreements
 )
 
+echo Creando el acceso directo en el Escritorio...
+powershell -NoProfile -Command "$d=[Environment]::GetFolderPath('Desktop'); $s=(New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $d 'Contadores impresoras.lnk')); $s.TargetPath='%~dp0CONTADORES.bat'; $s.WorkingDirectory='%~dp0'; $s.IconLocation='%~dp0logo.ico'; $s.Save()"
+
 echo Agendando el envio: el dia 24 de cada mes a las 9 pm...
 schtasks /create /f /tn ContadoresImpresoras /sc monthly /d 24 /st 21:00 /tr "\"%~dp0CONTADORES.bat\" auto" >nul
 if errorlevel 1 echo No se pudo agendar la tarea. Ejecuta INSTALAR.bat como el mismo usuario que usara el PC.
