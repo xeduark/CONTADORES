@@ -33,7 +33,7 @@ async def snmp(ip, oid):
 
 async def leer(ip):
     cont, modelo = await asyncio.gather(snmp(ip, OID_PAGINAS), snmp(ip, OID_MODELO))
-    return (modelo or "").splitlines()[0][:60] if modelo else "", cont
+    return modelo.splitlines()[0].split(" / ")[0][:60] if modelo else "", cont
 
 
 def guardar(archivo, lecturas, fecha):
