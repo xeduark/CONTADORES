@@ -1,10 +1,36 @@
-sede,ip
-Campo Amor,192.168.10.20
-Campo Amor,192.168.10.21
-Campo Amor,192.168.10.22
-Envigado,192.168.20.15
-Envigado,192.168.20.16
-Envigado,192.168.20.17
-BIC,192.168.30.20
-BIC,192.168.30.21
-BIC,192.168.30.22
+sede,ip,ubicacion
+Oviedo,192.168.7.247,Oviedo
+Prado,192.168.10.200,Prado
+Palmas,192.168.8.250,Palmas
+Rionegro,192.168.20.250,Rionegro
+Ayacucho,192.168.15.200,SP
+Ayacucho,192.168.0.201,Piso 2
+Ayacucho,192.168.15.250,Piso 5
+Ayacucho,192.168.15.86,Sistemas
+Campestre,192.168.24.200,Piso E
+Campestre,192.168.50.126,Piso 4
+Laureles,192.168.30.150,Laureles
+Santa Elena,192.168.0.27,Santa Elena
+Santa Elena,192.168.24.200,Casa Esperanza
+Sagrado Corazon,192.168.1.250,Sagrado Corazon 1
+Sagrado Corazon,192.168.1.251,Sagrado Corazon 2
+San Fernando Plaza,192.168.40.200,San Fernando Plaza
+Apartado Farmacia,192.168.26.201,Farmacia
+Apartado Farmacia,192.168.1.200,Enfermeria piso 3
+Apartado Recepcion,192.168.26.202,Recepcion
+Guayabal,192.168.70.20,Piso 5
+Guayabal,192.168.70.64,Piso 5
+Guayabal,192.168.75.200,Piso 4
+La Maria,192.168.206.73,Farmacia
+La Maria,192.168.202.75,Recepcion
+La Maria,192.168.206.75,Aplicaciones
+La 30,192.168.90.31,Orientadoras
+La 30,192.168.90.15,Pos consulta
+La 30,192.168.90.223,Dispensacion
+La 30,192.168.90.240,Sala de aplicaciones
+La 30,192.168.90.250,Dispensacion atencion al usuario
+Premium Plaza,192.168.35.250,Farmacia 1
+Premium Plaza,192.168.35.249,Farmacia 2
+Premium Plaza,192.168.35.251,Farmacia 3 (2do piso)
+Aventura,192.168.65.38,Aventura
+Campo Amor,192.168.45.250,Campo Amor Esencial
