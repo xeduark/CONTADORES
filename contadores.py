@@ -89,4 +89,13 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # Deja constancia de cada corte en registro.log (la tarea automatica no muestra la consola)
+    resultado = "ENVIADO"
+    try:
+        asyncio.run(main())
+    except BaseException as e:
+        resultado = f"FALLO: {e!r}"
+        raise
+    finally:
+        with open(os.path.join(AQUI, "registro.log"), "a", encoding="utf-8") as f:
+            print(f"{datetime.datetime.now():%Y-%m-%d %H:%M} {SEDE or '(sin sede)'} {resultado}", file=f)
