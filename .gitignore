@@ -4,3 +4,4 @@ __pycache__/
 datos/
 llave_compartida
 llave_compartida.pub
+registro.log
